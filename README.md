@@ -1,30 +1,45 @@
-# 🛒 SauceDemo E-Commerce Testing Portfolio
+# 🧪 SauceDemo E-Commerce - QA Manual Testing Portfolio
 
 ## 📌 Project Overview
-Project ini adalah demonstrasi pengujian kualitas perangkat lunak (Quality Assurance) pada website e-commerce **SauceDemo (Swag Labs)**. 
+Repository ini berisi dokumentasi pengujian manual (Manual Testing artifacts) untuk website e-commerce **[SauceDemo (Swag Labs)](https://www.saucedemo.com/)**.
 
-Tujuan dari project ini adalah memastikan fungsi utama website berjalan lancar dan mengidentifikasi bug pada skenario negatif.
+Project ini dibuat sebagai demonstrasi kemampuan saya dalam:
+- Menganalisis kebutuhan sistem dan membuat Skenario Pengujian.
+- Menulis **Test Case** yang detail (Positif & Negatif).
+- Melakukan eksekusi tes (Test Execution).
+- Melaporkan bug (**Bug Reporting**) dengan standar industri.
 
-**Scope Testing:**
-- Login Functionality (Positive & Negative)
-- Inventory & Filtering
-- Shopping Cart
-- Checkout Flow
-
-## 🛠 Tools Used
-- **Test Management:** Excel / Google Sheets
-- **Bug Tracking:** Excel (Simulasi Jira)
-- **Automation:** Python + Selenium (jika ada)
-- **Browser:** Google Chrome v120
+## 🛠 Tools & Environment
+| Category | Tool Used |
+| :--- | :--- |
+| **Testing Type** | Manual Testing (Black Box) |
+| **Test Management** | Microsoft Excel (Spreadsheet) |
+| **Browser** | Google Chrome |
+| **SUT (Site Under Test)** | https://www.saucedemo.com/ |
 
 ## 📂 Repository Structure
-1. **Manual_Testing_Artifacts**: Berisi dokumen Test Case lengkap dan laporan Bug.
-2. **Automation_Scripts**: Script pengujian otomatis untuk fitur Login dan Checkout.
-3. **Screenshots**: Bukti visual dari bug yang ditemukan.
+Berikut adalah penjelasan file yang ada di repository ini:
 
-## 🐛 Highlighted Bugs
-Salah satu bug kritis yang ditemukan:
-- **[BUG-001]**: Product image mismatch for "Sauce Labs Backpack" when using `problem_user`.
+- **`Test_Cases_SauceDemo.xlsx`**
+  Berisi langkah-langkah pengujian detail (Step-by-step), Test Data, dan hasil eksekusi (Pass/Fail) untuk fitur Login.
+  - *Coverage:* Valid Login, Locked Out User, Invalid Credentials.
+
+- **`Bug_Report_SauceDemo.xlsx`**
+  Laporan temuan bug saat melakukan eksplorasi menggunakan `problem_user`.
+  - *Highlight:* Isu tampilan gambar produk (Broken Image) pada halaman Inventory.
+
+## 📝 Test Scenarios Highlight
+Berikut adalah ringkasan skenario yang telah diuji:
+
+### 1. Login Module
+- ✅ **TC-LOG-001:** Verifikasi login sukses dengan user valid (`standard_user`).
+- ✅ **TC-LOG-002:** Verifikasi validasi error untuk user yang terkunci (`locked_out_user`).
+- ✅ **TC-LOG-003:** Verifikasi keamanan login dengan password yang salah.
+
+### 2. Bug Findings (Temuan Bug)
+- 🐞 **BUG-INV-001:** Gambar produk pada item pertama tidak muncul (menampilkan placeholder anjing) saat login menggunakan `problem_user`. Severity: *Low/Cosmetic*.
 
 ---
-*Project ini dibuat oleh MasFab untuk keperluan portofolio QA Engineer.*
+### 👤 Author
+Project ini dikerjakan oleh **MasFab**.
+Terbuka untuk diskusi terkait QA dan Software Testing.
