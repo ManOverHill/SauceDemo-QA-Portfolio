@@ -1,6 +1,6 @@
-# 🧪 SauceDemo E-Commerce - QA Manual Testing Portfolio
+# SauceDemo E-Commerce - QA Manual Testing Portfolio
 
-## 📌 Project Overview
+## Project Overview
 Repository ini berisi dokumentasi pengujian manual (Manual Testing artifacts) untuk website e-commerce **[SauceDemo (Swag Labs)](https://www.saucedemo.com/)**.
 
 Project ini dibuat sebagai demonstrasi kemampuan saya dalam:
@@ -17,7 +17,7 @@ Project ini dibuat sebagai demonstrasi kemampuan saya dalam:
 | **Browser** | Google Chrome |
 | **SUT (Site Under Test)** | https://www.saucedemo.com/ |
 
-## 📂 Repository Structure
+## Repository Structure
 Berikut adalah penjelasan file yang ada di repository ini:
 
 - **`Test_Cases_SauceDemo.xlsx`**
@@ -28,7 +28,7 @@ Berikut adalah penjelasan file yang ada di repository ini:
   Laporan temuan bug saat melakukan eksplorasi menggunakan `problem_user`.
   - *Highlight:* Isu tampilan gambar produk (Broken Image) pada halaman Inventory.
 
-## 📝 Test Scenarios Highlight
+## Test Scenarios Highlight
 Berikut adalah ringkasan skenario yang telah diuji:
 
 ### 1. Login Module
@@ -37,9 +37,9 @@ Berikut adalah ringkasan skenario yang telah diuji:
 - ✅ **TC-LOG-003:** Verifikasi keamanan login dengan password yang salah.
 
 ### 2. Bug Findings (Temuan Bug)
-- 🐞 **BUG-INV-001:** Gambar produk pada item pertama tidak muncul (menampilkan placeholder anjing) saat login menggunakan `problem_user`. Severity: *Low/Cosmetic*.
+- **BUG-INV-001:** Gambar produk pada item pertama tidak muncul (menampilkan placeholder anjing) saat login menggunakan `problem_user`. Severity: *Low/Cosmetic*.
 
 ---
-### 👤 Author
+### Author
 Project ini dikerjakan oleh **MasFab**.
 Terbuka untuk diskusi terkait QA dan Software Testing.
